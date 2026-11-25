@@ -1,0 +1,23 @@
+S4 EDU — pacote PWA multiplataforma
+
+ARQUIVOS
+- index.html: aplicativo web existente com metadados PWA e botão de instalação.
+- manifest.webmanifest: nome, ícones e comportamento de instalação.
+- sw.js: cache da estrutura principal para abrir o app shell offline.
+- icons/: ícones de instalação.
+
+PUBLICAÇÃO NO GITHUB PAGES
+1. Extraia todos os arquivos mantendo a estrutura de pastas.
+2. Envie index.html, manifest.webmanifest, sw.js e a pasta icons/ para a mesma pasta publicada.
+3. Faça commit e aguarde o GitHub Pages.
+4. Abra o endereço HTTPS do site.
+
+INSTALAÇÃO
+- Android/desktop: use “Instalar aplicativo” no menu do navegador ou o botão “Instalar S4 EDU”.
+- iPhone/iPad: abra no Safari > Compartilhar > Adicionar à Tela de Início.
+
+LIMITES IMPORTANTES
+- O cache offline guarda apenas a estrutura do aplicativo. Busca de escolas, mapa, GPS e serviços externos precisam de internet.
+- Os dados de perfil/documentos desta versão continuam no armazenamento local do navegador. Para sincronizar a mesma conta entre aparelhos, será necessário backend seguro com autenticação e banco de dados.
+- Para publicar na Google Play e App Store, será necessário preparar um pacote nativo (por exemplo, com Capacitor), cumprir as regras das lojas e configurar contas de desenvolvedor. O PWA, sozinho, não publica nas lojas.
+- Notificações push e autenticação Google reais exigem configuração de serviços e backend.
